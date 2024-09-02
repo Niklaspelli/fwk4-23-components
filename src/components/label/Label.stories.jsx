@@ -1,7 +1,7 @@
 import Label from "./Label";
 
 export default {
-  title: "FKW, Label",
+  title: "FWK/Label",
   component: Label,
 };
 
