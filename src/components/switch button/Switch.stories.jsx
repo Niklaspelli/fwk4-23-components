@@ -1,10 +1,10 @@
-import Switch from "./Switch";
+import Switch from './Switch';
 
 export default {
-  titel: "FWK/Switch",
-  component: Switch,
+	title: 'FWK/Switch',
+	component: Switch
 };
 
 export const Default = () => {
-  return <Switch />;
+	return <Switch />;
 };
