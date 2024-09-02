@@ -6,5 +6,5 @@ export default {
     };
 
 export const Default = () => {
-    return <Search />;
+    return <Search onSearch={(query) => console.log("Search query:", query)} />;
     };
