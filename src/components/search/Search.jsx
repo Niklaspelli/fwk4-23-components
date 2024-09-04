@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import Button from '../../Components/Button/Button';
 
 const Search = ({ onSearch }) => {
   const [query, setQuery] = useState('');
@@ -17,7 +18,7 @@ const Search = ({ onSearch }) => {
         value={query}
         onChange={handleInputChange}
       />
-      {/* Sökknappen kan läggas till här senare från en annan komponent */}
+      <Button/>
     </div>
   );
 };

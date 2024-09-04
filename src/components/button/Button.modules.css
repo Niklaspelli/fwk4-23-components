@@ -1,0 +1,8 @@
+.searchbutton {
+  background-color: #28b3d5;
+  padding: 5px 10px;
+  color: rgb(255, 255, 255);
+  border: none;
+  text-align: center;
+  cursor: pointer;
+}
