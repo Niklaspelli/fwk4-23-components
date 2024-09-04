@@ -1,7 +1,8 @@
 const InfoUser = () => {
 	return (
 		<>
-			<div>User Name:</div>
+			{/* Lägg in form här istället */}
+			<div>Username:</div>
 			<div>Email:</div>
 			<div>Password:</div>
 			<div>Start date:</div>
