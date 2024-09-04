@@ -1,10 +1,8 @@
-import infoUser from './infoUser';
+import InfoUser from './InfoUser';
 
 export default {
-	title: 'FWK/infoUser',
-	component: infoUser
+	title: 'FWK/InfoUser',
+	component: InfoUser
 };
 
-export const Default = () => {
-	return <infoUser />;
-};
+export const Default = {};

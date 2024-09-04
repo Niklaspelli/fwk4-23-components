@@ -1,5 +1,12 @@
-const infoUser = () => {
-	return <>User Name:, Email:, Password:, Avatar:, Start date:</>;
+const InfoUser = () => {
+	return (
+		<>
+			<div>User Name:</div>
+			<div>Email:</div>
+			<div>Password:</div>
+			<div>Start date:</div>
+		</>
+	);
 };
 
-export default infoUser;
+export default InfoUser;

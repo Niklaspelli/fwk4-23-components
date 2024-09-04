@@ -1,3 +1,3 @@
-import infoUser from './infoUser';
+import InfoUser from './InfoUser';
 
-export { infoUser };
+export { InfoUser };
