@@ -1,13 +1,13 @@
-import React, { useState } from 'react';
-import Button from '../../Components/Button/Button';
+import React, { useState } from "react";
+import Button from "../button/Button";
 
 const Search = ({ onSearch }) => {
-  const [query, setQuery] = useState('');
+  const [query, setQuery] = useState("");
 
   const handleInputChange = (event) => {
     const value = event.target.value;
     setQuery(value);
-    onSearch(value); 
+    onSearch(value);
   };
 
   return (
@@ -18,7 +18,7 @@ const Search = ({ onSearch }) => {
         value={query}
         onChange={handleInputChange}
       />
-      <Button/>
+      <Button />
     </div>
   );
 };
