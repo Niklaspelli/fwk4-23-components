@@ -24,4 +24,6 @@ To install and use `FWK4-components` in your project, follow the steps below:
 * Cards: A card component for displaying content.
 
 ### Storybook
-1. Npm run storybook
+1.  Install via npm:
+   ```bash
+   npm run storybook
