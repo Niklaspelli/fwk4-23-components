@@ -11,7 +11,7 @@ To install and use `FWK4-components` in your project, follow the steps below:
    ```bash
    npm install fwk4-components
 
-#  components in the library:
+###  Components in the library:
 * universalButton: A simple button component (universal).
 * Login: Login component
 * Register: Register component
