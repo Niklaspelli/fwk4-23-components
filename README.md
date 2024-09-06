@@ -1,8 +1,27 @@
-# React + Vite
+# FWK4-Components
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Introduction
+`fwk4-components` is a library of small, reusable components that can be used to build flexible and modular applications. The purpose of this repository is to enable fast and efficient development by providing predefined components that can be combined and customized for various projects.
 
-Currently, two official plugins are available:
+## Installation
+To install and use `FWK4-components` in your project, follow the steps below:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+### NPM
+1. Install via npm:
+   ```bash
+   npm install fwk4-components
+
+#  components in the library:
+* universalButton: A simple button component (universal).
+* Login: Login component
+* Register: Register component
+* Search: Search component (universal)
+* Headlines:
+* Logo:
+* Label:
+* InfoUser:
+* InputField: A text field component with validation.
+* Cards: A card component for displaying content.
+
+### Storybook
+1. Npm run storybook
