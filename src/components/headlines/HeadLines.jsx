@@ -1,8 +1,11 @@
-const HeadLines = () => {
+const HeadLines = ({login, register, toDo, newTask, deleteTask, }) => {
   return (
     <>
-      <h1>HeadLine 1</h1>
-      <h2>HeadLine 2</h2>
+      <h1>{login}</h1>
+      <h1>{register}</h1>
+      <h2>{toDo}</h2>
+      <h3>{newTask}</h3>
+      <h3>{deleteTask}</h3>
     </>
   );
 };
