@@ -22,6 +22,8 @@ Notice if you want to uppdate your library you need to do step 3 and step 7 to u
    ```bash
    npm install fwk4-components
 
+   //TEST
+
 ###  Components in the library:
 * universalButton: A simple button component (universal).
 * Login: Login component
