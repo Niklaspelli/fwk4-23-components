@@ -12,8 +12,8 @@ To install and use `FWK4-components` in your project, follow the steps below:
 3. From your components type in bash/terminal ```npm link
 4. In the package.json find the name "name" for the file.
 5. The create an app using ```npm create vite@latest
-6. ```bash npm install
-7. ```npm link "name of the component"
+6. ```npm install```
+7. ```npm link "name of the component" ```
 8. import the component you want in app.jsx from the library.
 Notice if you want to uppdate your library you need to do step 3 and step 7 to update. 
 
