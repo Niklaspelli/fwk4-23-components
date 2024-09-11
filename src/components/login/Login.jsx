@@ -8,7 +8,7 @@ const Login = () => {
 	return (
 		<>
 			<Logo />
-			<HeadLines title = "Login Page" />
+			<HeadLines title='Login Page' />
 			<Form fields={['username', 'password']} />
 			<UniversalButton title='Login' type='submit' />
 			<Switch />
