@@ -19,8 +19,9 @@ export const Register = {
 
 export const Default = {
     args: {
-        title: "Headline",
-        subTitle: "Sub headline"
+        title: "Headline h1",
+        subTitle: "Sub headline h2",
+        subSubTitle: "sub sub title h3"
     }
 }
 

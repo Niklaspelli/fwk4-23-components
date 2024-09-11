@@ -1,8 +1,9 @@
-const HeadLines = ({ title, subTitle }) => {
+const HeadLines = ({ title, subTitle, subSubTitle }) => {
 	return (
 		<>
 			<h1>{title}</h1>
-			<h3>{subTitle}</h3>
+			<h2>{subTitle}</h2>
+      <h3>{subSubTitle}</h3>
 		</>
 	);
 };
