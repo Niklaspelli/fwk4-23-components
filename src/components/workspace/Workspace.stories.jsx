@@ -5,4 +5,4 @@ export default {
   component: Workspace,
 };
 
-export const Default = {};
+export const Default = () => <Workspace />;
