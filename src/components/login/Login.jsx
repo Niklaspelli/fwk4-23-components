@@ -2,12 +2,13 @@ import Form from './Form';
 import Logo from '../logo/Logo';
 import Switch from './Switch';
 import UniversalButton from '@universalButton/UniversalButton';
+import HeadLines from '../headlines/HeadLines';
 
 const Login = () => {
 	return (
 		<>
 			<Logo />
-			<h1>Login</h1>
+			<HeadLines title = "Login Page" />
 			<Form fields={['username', 'password']} />
 			<UniversalButton title='Login' type='submit' />
 			<Switch />
