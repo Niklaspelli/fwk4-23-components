@@ -1,5 +1,13 @@
+import "./Footer.modules.css";
+
 const Footer = () => {
-  return <div>----- Det här är en footer länk länk -----</div>;
+  return (
+    <footer className="footer">
+      <a href="">Länk</a>
+
+      <a href="">Länk</a>
+    </footer>
+  );
 };
 
 export default Footer;
