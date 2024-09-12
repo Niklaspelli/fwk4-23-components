@@ -1,6 +1,7 @@
 import React from 'react';
 import styles from './FlexGridStructure.module.css';
 
+
 const FlexGridStructure = ({ config, data, children }) => {
     if (!data || data.length === 0) return <div>No data provided</div>;
     const { columns = 3, gap = '10px' } = config;
@@ -22,7 +23,9 @@ const FlexGridStructure = ({ config, data, children }) => {
                 </div>
             ))}
         </div>
+        
     );
+    
 };
 
 export default FlexGridStructure;

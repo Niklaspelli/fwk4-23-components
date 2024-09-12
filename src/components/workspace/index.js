@@ -1,3 +1,3 @@
-import Workspace from "./Workspace";
+import FlexGridStructure from "./FlexGridStructure";
 
-export { Workspace };
+export { FlexGridStructure };
