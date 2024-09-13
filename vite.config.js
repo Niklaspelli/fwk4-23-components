@@ -8,7 +8,7 @@ export default defineConfig({
     alias: {
       "@button": "/src/components/button",
       "@cards": "/src/components/cards",
-      "@headlines": "/src/components/headlines",
+      /*  "@headlines": "/src/components/headlines", */
       "@infoUser": "/src/components/infoUser",
       "@label": "/src/components/label",
       "@login": "/src/components/login",
