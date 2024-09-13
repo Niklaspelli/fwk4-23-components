@@ -2,6 +2,7 @@
   "name": "fwk-4-components",
   "private": true,
   "version": "0.0.0",
+  "main": ":/src/index.js",
   "type": "module",
   "scripts": {
     "dev": "vite",
