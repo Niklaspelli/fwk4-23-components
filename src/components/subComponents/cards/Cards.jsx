@@ -1,6 +1,6 @@
-import UniversalButton from '../subComponents/universalButton/UniversalButton';
+import UniversalButton from '../universalButton/UniversalButton';
 import './Cards.modules.css';
-import HeadLines from '../subComponents/headlines/HeadLines';
+import HeadLines from '../headlines/HeadLines';
 
 const Cards = ({}) => {
 	return (

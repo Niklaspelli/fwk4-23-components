@@ -1,8 +1,8 @@
-import Workspace from "./Workspace";
+import Workspace from './Workspace';
 
 export default {
-    title: "Components/Workspace",
-    component: Workspace,
-    };
+	title: 'Components/Workspace',
+	component: Workspace,
+};
 
-export const Default = () => <Workspace />;
+export const Default = {};

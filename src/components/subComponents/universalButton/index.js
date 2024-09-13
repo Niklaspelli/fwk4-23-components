@@ -1,3 +1,3 @@
-import UniversalButton from "./UniversalButton";
+import UniversalButton from './UniversalButton';
 
 export { UniversalButton };
