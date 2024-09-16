@@ -9,7 +9,6 @@ import { Search } from './components/subComponents/search';
 import { Logo } from './components/subComponents/logo';
 import { Label } from './components/subComponents/label';
 import { HeadLines } from './components/subComponents/headlines';
-import { Footer } from './components/subComponents/footer';
 import { Cards } from './components/subComponents/cards';
 
 export {
@@ -23,6 +22,5 @@ export {
 	Logo,
 	Label,
 	HeadLines,
-	Footer,
 	Cards,
 };
