@@ -4,7 +4,7 @@ import HeadLines from '../subComponents/headlines/HeadLines';
 const Profile = () => {
 	return (
 		<div>
-			<HeadLines title='Profile' />
+			<HeadLines title='Profile Page' />
 
 			<div>Your current username:</div>
 			<div>
