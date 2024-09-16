@@ -9,7 +9,7 @@ const Form = ({ fields = [], onSubmit }) => {
 		const { name, value } = e.target;
 		setFormState((prev) => ({
 			...prev,
-			[name]: value
+			[name]: value,
 		}));
 	};
 
