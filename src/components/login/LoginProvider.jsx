@@ -3,7 +3,7 @@ import React, { createContext, useContext, useState } from "react";
 const LoginContext = createContext();
 
 export const LoginProvider = ({ children }) => {
-  const [useId, setUserId] = useState(null);
+  const [userId, setUserId] = useState(null);
 
   const loginFunction = async (username, password) => {
     try {
@@ -35,4 +35,3 @@ export const LoginProvider = ({ children }) => {
 export const useLogin = () => {
   return useContext(LoginContext);
 };
-//dsdads
