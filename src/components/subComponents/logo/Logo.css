@@ -1,0 +1,15 @@
+.Logo, h1{
+    font-family: 'Montserrat', sans-serif; /* Använd Google Font */
+    font-size: 2.5rem; /* Storlek på texten */
+    color: #18126c; /* Mörkare grå för professionell look */
+    letter-spacing: 2px; /* Lite mellanrum mellan bokstäverna */
+    text-transform: uppercase; /* Gör texten versal för en ren stil */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); /* Lägger till subtil skugga */
+    margin-top: 10px; /* Litet utrymme ovanför texten */
+  }
+  
+  img {
+    max-width: 50px; /* Begränsa storleken på bilden för att hålla layouten balanserad */
+    max-height: 50px; /* Begränsa storleken på bilden för att hålla layouten balanserad */
+  }
+  
