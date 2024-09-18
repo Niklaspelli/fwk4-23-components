@@ -5,6 +5,7 @@ import HeadLines from "../subComponents/headlines/HeadLines";
 import UserAtom from "./UserAtom.jsx";
 import PasswordAtom from "./PasswordAtom.jsx";
 import LoginButton from "./LoginButtonAtom.jsx";
+import react, { useState } from "react";
 
 const Login = ({ loginFunction }) => {
   const [user, setUser] = useState("");

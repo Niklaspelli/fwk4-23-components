@@ -46,3 +46,52 @@
     box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
     /* Adds a subtle shadow effect on focus */
 }
+
+/* Container for the user input and label */
+.userContainer {
+    margin-bottom: 1rem;
+    /* Adds some space below the input field */
+    display: flex;
+    flex-direction: column;
+    /* Aligns label and input vertically */
+    width: 100%;
+    /* Ensures the container takes up the full width available */
+}
+
+/* Styles for the label */
+.userLabel {
+    font-size: 1rem;
+    /* Sets a standard font size */
+    margin-bottom: 0.5rem;
+    /* Adds space between the label and the input */
+    color: #333;
+    /* Dark gray color for the label */
+    font-weight: 600;
+    /* Makes the label text bold */
+}
+
+/* Styles for the input field */
+.userInput {
+    padding: 0.5rem;
+    /* Adds padding inside the input for better usability */
+    font-size: 1rem;
+    /* Ensures the input text is easily readable */
+    border: 1px solid #ccc;
+    /* Light gray border for the input */
+    border-radius: 4px;
+    /* Slightly rounds the corners of the input */
+    width: 100%;
+    /* Makes the input take up the full width of the container */
+    box-sizing: border-box;
+    /* Ensures padding is included in the element's width/height */
+}
+
+/* Additional styling for better user interaction */
+.userInput:focus {
+    border-color: #007bff;
+    /* Changes the border color when the input is focused */
+    outline: none;
+    /* Removes the default browser outline on focus */
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+    /* Adds a subtle shadow effect on focus */
+}

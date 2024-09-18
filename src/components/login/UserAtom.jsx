@@ -1,6 +1,6 @@
-import styles from "./Login/module.css";
+import styles from "./Login.module.css";
 
-function UserAtom({ initialValue = "", onUserChange, label = "Username " }) {
+const UserAtom = ({ initialValue = "", onUserChange, label = "Username" }) => {
   if (!onUserChange) {
     return (
       <>
@@ -16,7 +16,7 @@ function UserAtom({ initialValue = "", onUserChange, label = "Username " }) {
   return (
     <div className={styles.userContainer}>
       <label className={styles.userLabel}>
-        {label}
+        {label}:
         <input
           type="text"
           value={initialValue}
@@ -27,6 +27,6 @@ function UserAtom({ initialValue = "", onUserChange, label = "Username " }) {
       </label>
     </div>
   );
-}
+};
 
 export default UserAtom;
