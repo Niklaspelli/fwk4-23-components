@@ -11,6 +11,7 @@ import { Logo } from "./components/subComponents/logo";
 import { Label } from "./components/subComponents/label";
 import { HeadLines } from "./components/subComponents/headlines";
 import { Cards } from "./components/subComponents/cards";
+import Avatar from "./components/subComponents/avatar/Avatar";
 
 export {
   Login,
@@ -25,4 +26,5 @@ export {
   Label,
   HeadLines,
   Cards,
+  Avatar
 };
