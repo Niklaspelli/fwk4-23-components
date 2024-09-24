@@ -15,12 +15,9 @@ export const Default = {
 export const WithInitialValue = {
   args: {
     onUserChange: action("user-changed"),
-    initialValue: "John Doe",
   },
 };
 
 export const MissingChange = {
-  args: {
-    initialValue: "John Doe",
-  },
+  args: {},
 };
