@@ -19,7 +19,6 @@ const UserAtom = ({ initialValue = "", onUserChange, label = "Username" }) => {
         {label}:
         <input
           type="text"
-          value={initialValue}
           onChange={handleChange}
           placeholder="Enter username"
           className={styles.userInput}
