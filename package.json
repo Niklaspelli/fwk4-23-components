@@ -1,8 +1,11 @@
 {
-  "name": "fwk-4-components",
-  "private": true,
+  "name": "@niklaspelli/fwk4-23-components",
+  "private": false,
   "version": "0.0.0",
   "main": "dist/index.cjs.js",
+  "publishConfig": {
+    "access": "public"
+  },
   "type": "module",
   "scripts": {
     "dev": "vite",
@@ -60,5 +63,9 @@
   },
   "module": "dist/index.es.js",
   "unpkg": "dist/index.umd.js",
-  "files": "[dist, assets/fonts,README.md]"
+  "files": [
+    "dist",
+    "assets/fonts",
+    "README.md"
+  ]
 }
