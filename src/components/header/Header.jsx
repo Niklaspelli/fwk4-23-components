@@ -1,3 +1,4 @@
+import React from "react";
 import Search from "../subComponents/search/Search";
 import Logo from "../subComponents/logo/Logo";
 import styles from "./Header.module.css";
