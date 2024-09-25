@@ -1,5 +1,5 @@
 import React from "react";
-import React, { useState } from "react";
+import { useState } from "react";
 import UniversalButton from "../universalButton/UniversalButton";
 
 const Search = ({ onSearch }) => {
