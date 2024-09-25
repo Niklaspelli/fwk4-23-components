@@ -1,3 +1,5 @@
+import React from "react";
+
 const UniversalButton = ({ type, title, onClick }) => {
   if (!title) {
     return <div>Error: Title missing, add - title: "something" to args</div>;
