@@ -6,7 +6,7 @@ import UniversalButton from "../subComponents/universalButton/UniversalButton";
 import HeadLines from "../subComponents/headlines/HeadLines";
 import UserAtom from "./UserAtom.jsx";
 import PasswordAtom from "./PasswordAtom.jsx";
-import LoginButton from "./LoginButtonAtom.jsx";
+ 
 
 
 const Login = ({ loginFunction }) => {
@@ -29,7 +29,7 @@ const Login = ({ loginFunction }) => {
         <HeadLines title="Login Page" />
         <UserAtom onUserChange={setUser} />
         <PasswordAtom onPasswordChange={setPassword} />
-        <LoginButton onClick={handleLoginClick} />
+        {/* <LoginButton onClick={handleLoginClick} /> */}
         {/* <Form fields={['username', 'password']} />
 			<UniversalButton title='Login' type='submit' />
 			<Switch /> */}
