@@ -1,8 +1,9 @@
 name: hello-world
-on: push
-jobs:
-  any-job:
-    runs-on: ubuntu-latest
-    steps:
-      - name: any-step
-        run: echo "Hello World!"
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - 'package.json'
+
+        
