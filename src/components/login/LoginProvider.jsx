@@ -1,5 +1,5 @@
 import React from "react";
-import React, { createContext, useContext, useState } from "react";
+import { createContext, useContext, useState } from "react";
 
 const LoginContext = createContext();
 
