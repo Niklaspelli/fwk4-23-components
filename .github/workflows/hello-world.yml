@@ -1,0 +1,9 @@
+name: hello-world
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - 'package.json'
+
+        
