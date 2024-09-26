@@ -4,7 +4,7 @@ on:
     branches:
       - main
     paths:
-      - 'package.json'
+      - "package.json"
 jobs:
   check-version-and-publish:
     runs-on: ubuntu-latest
@@ -15,8 +15,8 @@ jobs:
       - name: Setup Node.js
         uses: actions/setup-node@v3
         with:
-          node-version: '18'
-          registry-url: 'https://registry.npmjs.org/'
+          node-version: "18"
+          registry-url: "https://registry.npmjs.org/"
       - name: Check for version change
         id: version_changed
         uses: EndBug/version-check@v2
@@ -32,7 +32,7 @@ jobs:
         run: npm publish
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NODE_AUTH_TOKEN }}
-      - name: Notify Slack
+      - name: Notify Discord
         if: steps.version_changed.outputs.changed == 'true'
         env:
           DISCORD_WEBHOOK_URL: ${{ secrets.DISCORD_WEBHOOK_URL }}
@@ -41,5 +41,3 @@ jobs:
           LIBRARY_NAME=$(jq -r '.name' package.json)
           MESSAGE="Version $VERSION of $LIBRARY_NAME now published to npmjs."
           curl -X POST -H 'Content-type: application/json' --data "{\"text\":\"${MESSAGE}\"}" $DISCORD_WEBHOOK_URL
-
-        
