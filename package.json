@@ -16,14 +16,14 @@
     "build-storybook": "storybook build"
   },
   "dependencies": {
-    "react": ">=17.0.0 <19.0.0",
-    "react-dom": ">=17.0.0 <19.0.0"
   },
   "peerDependencies": {
     "react": ">=17.0.0 <19.0.0",
     "react-dom": ">=17.0.0 <19.0.0"
   },
   "devDependencies": {
+    "react": ">=17.0.0 <19.0.0",
+    "react-dom": ">=17.0.0 <19.0.0",
     "@babel/preset-react": "^7.24.7",
     "@chromatic-com/storybook": "^1.8.0",
     "@eslint/js": "^9.9.0",
