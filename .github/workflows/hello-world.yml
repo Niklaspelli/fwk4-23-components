@@ -45,4 +45,4 @@ jobs:
         uses: sebastianpopp/discord-action@releases/v2
         with:
           webhook: ${{ secrets.DISCORD_WEBHOOK_URL }}
-          message: Hej
+          message: ${{ github.actor }} has been successfullly published to main.
