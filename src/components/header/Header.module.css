@@ -1,3 +1,5 @@
+@import './../../global.css';
+
 .header {
   width: auto; /* change to 100vw? */
   height: 30dvh; /* change height? */

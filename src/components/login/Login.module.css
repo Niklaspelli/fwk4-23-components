@@ -1,3 +1,6 @@
+@import './../../global.css';
+
+
 /* Container for the password input and label */
 .passwordContainer {
     margin-bottom: 1rem;
