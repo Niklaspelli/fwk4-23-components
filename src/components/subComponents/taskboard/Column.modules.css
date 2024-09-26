@@ -1,0 +1,10 @@
+.column {
+    width: 300px;
+    height: 90vh;
+    padding: 10px;
+    background-color: #f4f4f4;
+    border-radius: 5px;
+    margin-right: 20px;
+    text-transform: uppercase;
+    text-align: center;
+}
