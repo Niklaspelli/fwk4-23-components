@@ -6,6 +6,7 @@ const Profile = () => {
   return (
     <div>
       <HeadLines title="Profile Page" />
+      <p>Hwej!</p>
 
       <div>Your current username:</div>
       <div>
