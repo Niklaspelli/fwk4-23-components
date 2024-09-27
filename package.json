@@ -2,7 +2,7 @@
   "name": "@niklaspelli/fwk4-23-components",
   "private": false,
   "version": "0.10.7",
-  "main": "dist/index.cjs.js",
+  "main": "src/index.js",
   "publishConfig": {
     "access": "public"
   },
@@ -60,7 +60,7 @@
       "plugin:storybook/recommended"
     ]
   },
-  "module": "dist/index.es.js",
+  "module": "src/index.js",
   "unpkg": "dist/index.umd.js",
   "files": [
     "dist",

@@ -4,6 +4,7 @@ const LoginContext = createContext();
 
 export const LoginProvider = ({ children }) => {
   const [userId, setUserId] = useState(null);
+  const [error, setError] = useState(null);
 
   const loginFunction = async (username, password) => {
     try {
@@ -19,6 +20,7 @@ export const LoginProvider = ({ children }) => {
         console.log("Login successful, User ID:", result.userId);
       } else {
         console.error("Login failed:", result.message);
+        setError(result.message)
       }
     } catch (error) {
       console.error("An error occurred during Login:", error);

@@ -1,14 +1,16 @@
 import React, { useState } from "react";
-import Form from "./Form";
-import Switch from "./Switch";
-import UniversalButton from "../subComponents/universalButton/UniversalButton";
+// import Form from "./Form";
+// import Switch from "./Switch";
+// import UniversalButton from "../subComponents/universalButton/UniversalButton";
 import HeadLines from "../subComponents/headlines/HeadLines";
 import UserAtom from "./UserAtom.jsx";
 import PasswordAtom from "./PasswordAtom.jsx";
+import LoginButtonAtom from "./LoginButtonAtom.jsx";
+
  
 
 
-const Login = ({ loginFunction }) => {
+const Login = ({ loginFunction, error }) => {
   const [user, setUser] = useState("");
   const [password, setPassword] = useState("");
 
@@ -19,6 +21,7 @@ const Login = ({ loginFunction }) => {
       console.error("No login function provided");
       console.error("User:", user);
       console.error("Password:", password);
+      console.log(error)
     }
   };
 
@@ -28,7 +31,7 @@ const Login = ({ loginFunction }) => {
         <HeadLines title="Login Page" />
         <UserAtom onUserChange={setUser} />
         <PasswordAtom onPasswordChange={setPassword} />
-        {/* <LoginButton onClick={handleLoginClick} /> */}
+         <LoginButtonAtom onClick={handleLoginClick} /> 
         {/* <Form fields={['username', 'password']} />
 			<UniversalButton title='Login' type='submit' />
 			<Switch /> */}
