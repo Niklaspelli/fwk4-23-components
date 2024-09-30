@@ -12,6 +12,9 @@ import { Label } from "./components/subComponents/label";
 import { HeadLines } from "./components/subComponents/headlines";
 import { Cards } from "./components/subComponents/cards";
 import Avatar from "./components/subComponents/avatar/Avatar";
+import Column from "./components/subComponents/taskboard/Column";
+import TaskBoard from "./components/subComponents/taskboard/TaskBoard";
+
 
 export {
   Login,
@@ -26,5 +29,7 @@ export {
   Label,
   HeadLines,
   Cards,
-  Avatar
+  Avatar,
+  Column,
+  TaskBoard
 };
