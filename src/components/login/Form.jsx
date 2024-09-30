@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import styles from "./Login.module.css";
 
 const Form = ({ fields = [], onSubmit }) => {
   const [formState, setFormState] = useState(
@@ -22,50 +23,54 @@ const Form = ({ fields = [], onSubmit }) => {
 
   return (
     <>
-      <form onSubmit={handleSubmit}>
+      <form className={styles.form} onSubmit={handleSubmit}>
         {fields.includes("username") && (
-          <div>
+          <div className={styles.inputs}>
             <label htmlFor="username">Användarnamn: </label>
             <input
               type="text"
               id="username"
               name="username"
+              placeholder="Användarnamn"
               value={formState.username}
               onChange={handleChange}
             />
           </div>
         )}
         {fields.includes("email") && (
-          <div>
+          <div className={styles.inputs}>
             <label htmlFor="email">Epost: </label>
             <input
               type="email"
               id="email"
               name="email"
+              placeholder="Epost"
               value={formState.email}
               onChange={handleChange}
             />
           </div>
         )}
         {fields.includes("password") && (
-          <div>
+          <div className={styles.inputs}>
             <label htmlFor="password">Lösenord: </label>
             <input
               type="password"
               id="password"
               name="password"
+              placeholder="Lösenord"
               value={formState.password}
               onChange={handleChange}
             />
           </div>
         )}
         {fields.includes("repeatPassword") && (
-          <div>
+          <div className={styles.inputs}>
             <label htmlFor="repeatPassword">Verifiera Lösenord: </label>
             <input
               type="password"
               id="repeatPassword"
               name="repeatPassword"
+              placeholder="Verifiera Lösenord"
               value={formState.repeatPassword}
               onChange={handleChange}
             />

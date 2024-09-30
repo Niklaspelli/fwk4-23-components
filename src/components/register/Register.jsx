@@ -12,7 +12,6 @@ const Register = () => {
       <HeadLines title="Register Page" />
       <Form fields={["username", "email", "password", "repeatPassword"]} />
       <UniversalButton title="Register" type="submit" />
-      <Switch />
       </div>
     </div>
   );
