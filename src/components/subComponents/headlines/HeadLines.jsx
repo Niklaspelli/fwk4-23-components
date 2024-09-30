@@ -1,11 +1,12 @@
 import React from "react";
+import './HeadLines.modules.css';
 
 const HeadLines = ({ title, subTitle, subSubTitle }) => {
   return (
     <>
-      <h1>{title}</h1>
-      <h2>{subTitle}</h2>
-      <h3>{subSubTitle}</h3>
+      <h1 className="headline">{title}</h1>
+      <h2 className="subtitle">{subTitle}</h2>
+      <h3 className="subsubtitle">{subSubTitle}</h3>
     </>
   );
 };

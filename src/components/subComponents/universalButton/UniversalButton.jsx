@@ -1,4 +1,5 @@
 import React from "react";
+import styles from "./Universalbutton.module.css";
 
 const UniversalButton = ({ type, title, onClick }) => {
   if (!title) {
@@ -22,7 +23,7 @@ const UniversalButton = ({ type, title, onClick }) => {
 
   return (
     <div>
-      <button type={type} onClick={type === "button" ? onClick : undefined}>
+      <button className={styles.buttons} type={type} onClick={type === "button" ? onClick : undefined}>
         {title}
       </button>
     </div>

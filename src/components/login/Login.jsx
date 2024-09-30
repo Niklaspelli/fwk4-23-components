@@ -6,6 +6,7 @@ import HeadLines from "../subComponents/headlines/HeadLines";
 import UserAtom from "./UserAtom.jsx";
 import PasswordAtom from "./PasswordAtom.jsx";
 import LoginButtonAtom from "./LoginButtonAtom.jsx";
+import styles from "./Login.module.css";
 
  
 
@@ -28,6 +29,7 @@ const Login = ({ loginFunction, error }) => {
   return (
     <>
       <div>
+        <div className={styles.container}>
         <HeadLines title="Login Page" />
         <UserAtom onUserChange={setUser} />
         <PasswordAtom onPasswordChange={setPassword} />
@@ -35,6 +37,7 @@ const Login = ({ loginFunction, error }) => {
         {/* <Form fields={['username', 'password']} />
 			<UniversalButton title='Login' type='submit' />
 			<Switch /> */}
+      </div>
       </div>
     </>
   );

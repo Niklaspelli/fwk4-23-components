@@ -1,100 +1,89 @@
 @import './../../global.css';
 
 
+
+.container {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 3rem 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+
 /* Container for the password input and label */
-.passwordContainer {
-    margin-bottom: 1rem;
-    /* Adds space below the input field */
-    display: flex;
-    flex-direction: column;
-    /* Aligns label and input vertically */
-    width: 100%;
-    /* Ensures the container takes up the full width available */
-}
-
-/* Styles for the label (if you add one) */
-.passwordLabel {
-    font-size: 1rem;
-    /* Sets a standard font size */
-    margin-bottom: 0.5rem;
-    /* Adds space between the label and the input */
-    color: #333;
-    /* Dark gray color for the label */
-    font-weight: 600;
-    /* Makes the label text bold */
-}
-
-/* Styles for the input field */
-.passwordInput {
-    padding: 0.5rem;
-    /* Adds padding inside the input for better usability */
-    font-size: 1rem;
-    /* Ensures the input text is easily readable */
-    border: 1px solid #ccc;
-    /* Light gray border for the input */
-    border-radius: 4px;
-    /* Slightly rounds the corners of the input */
-    width: 100%;
-    /* Makes the input take up the full width of the container */
-    box-sizing: border-box;
-    /* Ensures padding is included in the element's width/height */
-}
-
-/* Additional styling for better user interaction */
-.passwordInput:focus {
-    border-color: #007bff;
-    /* Changes the border color when the input is focused */
-    outline: none;
-    /* Removes the default browser outline on focus */
-    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
-    /* Adds a subtle shadow effect on focus */
-}
-
-/* Container for the user input and label */
+.passwordContainer,
 .userContainer {
-    margin-bottom: 1rem;
-    /* Adds some space below the input field */
-    display: flex;
-    flex-direction: column;
-    /* Aligns label and input vertically */
     width: 100%;
-    /* Ensures the container takes up the full width available */
+    margin-bottom: 1.5rem;
 }
 
-/* Styles for the label */
+.passwordLabel,
 .userLabel {
-    font-size: 1rem;
-    /* Sets a standard font size */
+    color: #ffffff;
+    font-size: 0.9rem;
     margin-bottom: 0.5rem;
-    /* Adds space between the label and the input */
-    color: #333;
-    /* Dark gray color for the label */
-    font-weight: 600;
-    /* Makes the label text bold */
+    text-align: left;
+    display: block;
+    font-weight: 200; 
 }
 
-/* Styles for the input field */
+.passwordInput,
 .userInput {
-    padding: 0.5rem;
-    /* Adds padding inside the input for better usability */
-    font-size: 1rem;
-    /* Ensures the input text is easily readable */
-    border: 1px solid #ccc;
-    /* Light gray border for the input */
-    border-radius: 4px;
-    /* Slightly rounds the corners of the input */
     width: 100%;
-    /* Makes the input take up the full width of the container */
+    padding: 0.75rem;
+    font-size: 1rem;
+    color: #ffffff;
+    background-color: rgba(255, 255, 255, 0.5);
+    border: 1px solid #3b4c75;
+    border-radius: 5px;
     box-sizing: border-box;
-    /* Ensures padding is included in the element's width/height */
+    outline: none;
+    transition: all 0.3s ease;
 }
 
-/* Additional styling for better user interaction */
+.passwordInput:focus,
 .userInput:focus {
-    border-color: #007bff;
-    /* Changes the border color when the input is focused */
-    outline: none;
-    /* Removes the default browser outline on focus */
-    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
-    /* Adds a subtle shadow effect on focus */
+    border-color: #4a90e2;
+    box-shadow: 0 0 8px rgba(74, 144, 226, 0.5);
 }
+
+.passwordLabel ::placeholder {
+    color: rgba(255, 255, 255, 0.5);
+    font-size: small;
+}
+
+.userLabel ::placeholder {
+    color: rgba(255, 255, 255, 0.5);
+    font-size: small;
+}
+
+
+
+/* Button styles */
+.submitButton {
+    background-color: #7bb8ff; /* Blue button */
+    color: #ffffff;
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 100%;
+    margin-top: 1rem;
+}
+
+.submitButton:hover {
+    background-color: #284ea7; /* Darker blue on hover */
+}
+
+
