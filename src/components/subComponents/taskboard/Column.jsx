@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import TaskCard from "./TaskCard";
 import "./Column.modules.css";
+import { UniversalButton } from "../universalButton";
 
 const Column = ({ title }) => {
   const [tasks, setTasks] = useState([]);
@@ -13,22 +14,33 @@ const Column = ({ title }) => {
     }
   };
 
+  const handleRemoveTask = (taskToRemove) => {
+    setTasks(tasks.filter((task) => task !== taskToRemove));
+  };
+
   return (
     <div className="column">
-      {title}
-      <input
-        type="text"
-        value={newTask}
-        onChange={(event) => setNewTask(event.target.value)}
-        placeholder="Add task.."
-      />
-      <button onClick={handleAddTask}>+</button>
+      <h4>{title}</h4>
+      <div className="newTaskContainer">
+        <input
+          className="taskInput"
+          type="text"
+          value={newTask}
+          onChange={(event) => setNewTask(event.target.value)}
+          placeholder="New task..."
+        />
+        <UniversalButton title="Add" type="button" onClick={handleAddTask} />
+      </div>
+
       {tasks.map((task, index) => (
-        <TaskCard key={index} title={task} />
+        <TaskCard
+          key={index}
+          description={task}
+          onRemove={() => handleRemoveTask(task)}
+        />
       ))}
     </div>
   );
 };
 
 export default Column;
-//test

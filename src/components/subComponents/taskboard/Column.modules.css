@@ -8,3 +8,15 @@
     text-transform: uppercase;
     text-align: center;
 }
+
+.taskInput{
+    border-style: none;
+}
+
+.newTaskContainer{
+    display: flex;
+    justify-content: first baseline;
+    margin-bottom: 1rem;
+    background-color: white;
+    padding:1%;
+}

@@ -1,11 +1,17 @@
 import React from "react";
 import "./TaskCard.modules.css";
 
-const TaskCard = ({ title }) => {
+const TaskCard = ({ description, onRemove }) => {
   return (
     <div className="taskCard">
-      <p>{title}</p>
-      {/* <p>{description}</p> */}
+      <div className="taskCardText">
+        <p>{description}</p>
+      </div>
+      <div className="taskCardPanel">
+        <button onClick={onRemove}>✕</button>
+        <button>✓</button>
+        <button>↪</button>
+      </div>
     </div>
   );
 };
