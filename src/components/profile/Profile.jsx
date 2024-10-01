@@ -2,7 +2,6 @@ import React from "react";
 import UniversalButton from "../subComponents/universalButton/UniversalButton";
 import HeadLines from "../subComponents/headlines/HeadLines";
 import styles from "./Profile.module.css";
-import { Placeholder } from "storybook/internal/components";
 
 const Profile = () => {
   return (
