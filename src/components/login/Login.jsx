@@ -30,7 +30,7 @@ const Login = ({ loginFunction, error }) => {
     <>
       <div>
         <div className={styles.container}>
-        <HeadLines title="Login Page" />
+        <HeadLines title="Login" />
         <UserAtom onUserChange={setUser} />
         <PasswordAtom onPasswordChange={setPassword} />
          <UniversalButton title="Login" type="button" onClick={handleLoginClick} /> 
