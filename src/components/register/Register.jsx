@@ -9,7 +9,7 @@ const Register = () => {
   return (
     <div>
       <div className={styles.container}>
-      <HeadLines title="Register Page" />
+      <HeadLines title="Register" />
       <Form fields={["username", "email", "password", "repeatPassword"]} />
       <UniversalButton title="Register" type="submit" />
       </div>
