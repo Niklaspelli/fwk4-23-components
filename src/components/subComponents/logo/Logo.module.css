@@ -1,0 +1,23 @@
+/* Logo.module.css */
+
+.logo {
+  display: flex; 
+  align-items: center;
+  padding: 0 2rem; 
+}
+
+.logo img {
+  max-width: 40px; 
+  max-height: 40px;
+  margin-right: 10px;
+}
+
+ h1 {
+  font-size: 1.5rem;
+  color: #18126c;
+  width: 300px;
+  letter-spacing: 2px; 
+  text-transform: uppercase; 
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); 
+  margin: 0; 
+}

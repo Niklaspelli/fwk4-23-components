@@ -8,9 +8,10 @@ const TaskCard = ({ description, onRemove }) => {
         <p>{description}</p>
       </div>
       <div className="taskCardPanel">
-        <button onClick={onRemove}>✕</button>
-        <button>✓</button>
-        <button>↪</button>
+       
+        <button className="check">✓</button>
+        <button className="back">↪</button>
+        <button className="remove" onClick={onRemove}>✕</button>
       </div>
     </div>
   );
