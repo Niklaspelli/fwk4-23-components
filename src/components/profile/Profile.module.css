@@ -5,13 +5,15 @@
   border-radius: 10px;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
   width: 100%;
-  max-width: 50rem;
+  max-width: 500px;
   text-align: center;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   margin: 0 auto;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
 }
 
 .profile {
@@ -21,10 +23,23 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  margin-bottom: 10rem;
+  margin-bottom: 2rem;
 }
 
 .profile p {
-  font-size: 2rem;
+  font-size: 1rem;
   color: #ffffff;
+}
+
+.profile input {
+  width: 100%;
+  padding: 0.75rem;
+  font-size: 1rem;
+  color: #ffffff;
+  background-color: rgba(255, 255, 255, 0.5);
+  border: 1px solid #3b4c75;
+  border-radius: 5px;
+  box-sizing: border-box;
+  outline: none;
+  transition: all 0.3s ease;
 }
