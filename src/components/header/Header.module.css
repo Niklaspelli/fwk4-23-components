@@ -1,23 +1,39 @@
 @import './../../global.css';
 
 .header {
-  width: auto; /* change to 100vw? */
-  height: 30dvh; /* change height? */
-  background-color: #3e3ca5; /* change color 2 correct  */
-  position: relative;
+  width: 100%; /* Set to full viewport width */
+  height: 15vh; /* Set height relative to the viewport */
+  background-color: #4c4caf; /* Background color */
   display: flex;
-  justify-content: center;
+  justify-content: space-between; /* Distribute space between the logo and search */
   align-items: center;
+  position: relative;
 }
 
 .logoContainer {
-  position: absolute;
-  top: 0;
-  left: 1rem;
+  display: flex;
+  align-items: center; /* Center logo and text vertically */
 }
 
 .searchContainer {
-  position: absolute;
-  bottom: 1rem;
-  right: 1rem;
+  display: flex;
+  align-items: center;
+  padding-right: 5rem; /* Add some padding to the right to avoid touching the edge */
+}
+
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+  .header {
+    height: 10vh; /* Adjust header height for smaller screens */
+  }
+
+  .logoContainer img {
+    width: 50px; /* Adjust the logo size for smaller screens */
+  }
+}
+
+@media (min-width: 769px) {
+  .logoContainer img {
+    width: 100px; /* Adjust the logo size for larger screens */
+  }
 }

@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import UniversalButton from "../universalButton/UniversalButton";
+import styles from "./Search.module.css";
 
 const Search = ({ onSearch }) => {
   const [query, setQuery] = useState("");
@@ -12,13 +12,13 @@ const Search = ({ onSearch }) => {
 
   return (
     <div>
-      <input
+      <input className={styles.inputsearch}
         type="text"
         placeholder="Search..."
         value={query}
         onChange={handleInputChange}
       />
-      <UniversalButton title="search" type="submit" />
+      <button className={styles.buttonsearch} onClick={() => onSearch(query)}>Search</button>
     </div>
   );
 };
