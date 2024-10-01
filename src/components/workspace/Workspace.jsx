@@ -1,13 +1,13 @@
 import React from "react";
-import FlexGridStructure from "./FlexGridStructure";
-import Cards from "../subComponents/cards/Cards";
+// import FlexGridStructure from "./FlexGridStructure";
+// import Cards from "../subComponents/cards/Cards";
 import HeadLines from "../subComponents/headlines/HeadLines";
 const Workspace = (data) => {
   return (
    <div>
      <HeadLines title="Workspace" />
   
-    <FlexGridStructure
+    {/* <FlexGridStructure
     
       config={{
         columns: 3,
@@ -15,7 +15,7 @@ const Workspace = (data) => {
       }}
       data={[{}, {}, {}]}
       children={<Cards />}
-    />
+    /> */}
      </div>
   );
  
