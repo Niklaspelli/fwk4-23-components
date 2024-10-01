@@ -3,8 +3,10 @@ import React from "react";
 // import Cards from "../subComponents/cards/Cards";
 import HeadLines from "../subComponents/headlines/HeadLines";
 const Workspace = (data) => {
+
+
   return (
-   <div>
+   <div className="">
      <HeadLines title="Workspace" />
   
     {/* <FlexGridStructure

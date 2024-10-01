@@ -9,22 +9,26 @@ const Profile = () => {
      <div className={styles.container}>
       <HeadLines title="Profile" />
       <div className={styles.profile}>
-      <p>Hwej!</p>
+      <h3>Hej + namn!</h3>
 
-      <div>Your current username:</div>
+      <div className={styles.profile}>
       <div>
-        Your current email:
+        <p>Your current email:</p>
         <br />
-        <input type="text" />
+        <input type="text" Placeholder="Change email here"/>
         <UniversalButton title="Change your email" type="submit" />
       </div>
       <div>
-        Your current password:
+      <p>Your current password:</p>
         <br />
-        <input type="text" />
+        <input type="password" placeholder="********" />
         <UniversalButton title="Change your password" type="submit" />
       </div>
-      <div>Your account was created:</div>
+      <div>
+      <p>Your account was created:
+      </p>
+      </div>
+      </div>
       </div>
       </div>
     </div>
