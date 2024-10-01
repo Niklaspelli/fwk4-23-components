@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Navigate } from "react-router-dom";
 // import Form from "./Form";
 // import Switch from "./Switch";
 // import UniversalButton from "../subComponents/universalButton/UniversalButton";
@@ -8,12 +9,14 @@ import PasswordAtom from "./PasswordAtom.jsx";
 import styles from "./Login.module.css";
 import UniversalButton from "../subComponents/universalButton/UniversalButton.jsx";
 
- 
-
-
 const Login = ({ loginFunction, error }) => {
   const [user, setUser] = useState("");
   const [password, setPassword] = useState("");
+  const navigate = useNavigate();
+
+  const handleNavigateClick = () => {
+    navigate("/register"); // Navigate to "/new-page"
+  };
 
   const handleLoginClick = () => {
     if (loginFunction) {
@@ -22,7 +25,7 @@ const Login = ({ loginFunction, error }) => {
       console.error("No login function provided");
       console.error("User:", user);
       console.error("Password:", password);
-      console.log(error)
+      console.log(error);
     }
   };
 
@@ -30,14 +33,23 @@ const Login = ({ loginFunction, error }) => {
     <>
       <div>
         <div className={styles.container}>
-        <HeadLines title="Login Page" />
-        <UserAtom onUserChange={setUser} />
-        <PasswordAtom onPasswordChange={setPassword} />
-         <UniversalButton title="Login" type="button" onClick={handleLoginClick} /> 
-        {/* <Form fields={['username', 'password']} />
+          <HeadLines title="Login Page" />
+          <UserAtom onUserChange={setUser} />
+          <PasswordAtom onPasswordChange={setPassword} />
+          <UniversalButton
+            title="Login"
+            type="button"
+            onClick={handleLoginClick}
+          />
+          <UniversalButton
+            title="Register"
+            type="button"
+            onClick={handleNavigateClick}
+          />
+          {/* <Form fields={['username', 'password']} />
 			<UniversalButton title='Login' type='submit' />
 			<Switch /> */}
-      </div>
+        </div>
       </div>
     </>
   );
