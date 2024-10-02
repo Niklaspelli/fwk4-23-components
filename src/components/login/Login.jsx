@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import { Navigate } from "react-router-dom";
 // import Form from "./Form";
 // import Switch from "./Switch";
 // import UniversalButton from "../subComponents/universalButton/UniversalButton";
@@ -12,11 +11,6 @@ import UniversalButton from "../subComponents/universalButton/UniversalButton.js
 const Login = ({ loginFunction, error }) => {
   const [user, setUser] = useState("");
   const [password, setPassword] = useState("");
-  const navigate = useNavigate();
-
-  const handleNavigateClick = () => {
-    navigate("/register"); // Navigate to "/new-page"
-  };
 
   const handleLoginClick = () => {
     if (loginFunction) {
