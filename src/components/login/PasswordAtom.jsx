@@ -21,7 +21,7 @@ const PasswordAtom = ({ onPasswordChange, label = "Password" }) => {
         <input
           type="password"
           onChange={handleChange}
-          placeholder="Skriv in lösenord"
+          placeholder="Enter password"
           className={styles.passwordInput}
         />
       </label>

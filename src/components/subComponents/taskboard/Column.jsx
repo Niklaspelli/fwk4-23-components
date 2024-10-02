@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import TaskCard from "./TaskCard";
-import "./Column.modules.css";
+import styles from "./TaskBoard.module.css";
 import { UniversalButton } from "../universalButton";
 
 const Column = ({ title }) => {
@@ -19,11 +19,11 @@ const Column = ({ title }) => {
   };
 
   return (
-    <div className="column">
+    <div className={styles.column}>
       <h4>{title}</h4>
-      <div className="newTaskContainer">
+      <div className={styles.newTaskContainer}>
         <input
-          className="taskInput"
+          className={styles.taskInput}
           type="text"
           value={newTask}
           onChange={(event) => setNewTask(event.target.value)}

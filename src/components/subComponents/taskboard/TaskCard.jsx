@@ -1,16 +1,17 @@
 import React from "react";
-import "./TaskCard.modules.css";
+import styles from "./TaskBoard.module.css";
 
 const TaskCard = ({ description, onRemove }) => {
   return (
-    <div className="taskCard">
-      <div className="taskCardText">
+    <div className={styles.taskCard}>
+      <div className={styles.taskCardText}>
         <p>{description}</p>
       </div>
-      <div className="taskCardPanel">
-        <button onClick={onRemove}>✕</button>
-        <button>✓</button>
-        <button>↪</button>
+      <div className={styles.taskCardPanel}>
+       
+        <button className={styles.check}>✓</button>
+        <button className={styles.back}>↪</button>
+        <button className={styles.remove} onClick={onRemove}>✕</button>
       </div>
     </div>
   );
