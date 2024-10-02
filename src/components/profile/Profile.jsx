@@ -12,7 +12,7 @@ const Profile = () => {
       <div className={styles.profile}>
       <h3>Hello Julia!</h3> {/* (Bara mmock inför redovisningen) */}
       <div>
-        <p>Your current email: malin.luron@gmail.com</p> {/* (Bara mmock inför redovisningen) */}
+        <p>Your current email: julia.luron@gmail.com</p> {/* (Bara mmock inför redovisningen) */}
         <input type="text" Placeholder="Change email here"/>
         <UniversalButton title="Change your email" type="submit" />
       </div>
