@@ -39,8 +39,11 @@ const Login = ({ loginFunction, error }) => {
         <HeadLines title="Login" />
         <UserAtom onUserChange={setUser} />
         <PasswordAtom onPasswordChange={setPassword} />
-        <UniversalButton title="Login" type="button" onClick={handleLoginClick} />
-      </div>
+        <UniversalButton
+          title="Login"
+          type="button"
+          onClick={handleLoginClick}
+        />
       </div>
     </>
   );
