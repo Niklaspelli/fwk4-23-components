@@ -32,18 +32,7 @@ const Login = ({ loginFunction, error }) => {
             type="button"
             onClick={handleLoginClick}
           />
-          {/* <Form fields={['username', 'password']} />
-			<UniversalButton title='Login' type='submit' />
-			<Switch /> */}
         </div>
-        <HeadLines title="Login" />
-        <UserAtom onUserChange={setUser} />
-        <PasswordAtom onPasswordChange={setPassword} />
-        <UniversalButton
-          title="Login"
-          type="button"
-          onClick={handleLoginClick}
-        />
       </div>
     </>
   );
