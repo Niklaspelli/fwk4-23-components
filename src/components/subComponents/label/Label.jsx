@@ -1,7 +1,7 @@
-import React from "react";
+// import React from "react";
 
-const Label = () => {
-  return <label>Username:</label>;
-};
+// const Label = () => {
+//   return <label>Username:</label>;
+// };
 
-export default Label;
+// export default Label;

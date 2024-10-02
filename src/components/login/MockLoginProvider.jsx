@@ -17,8 +17,7 @@ export const MockLoginProvider = ({ children }) => {
 
   return (
     <MockLoginContext.Provider
-      value={{ userId, loginFunction: mockLoginFunction }}
-    >
+      value={{ userId, loginFunction: mockLoginFunction }}>
       {children}
     </MockLoginContext.Provider>
   );

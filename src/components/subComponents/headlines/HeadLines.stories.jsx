@@ -24,17 +24,3 @@ export const Default = {
         subSubTitle: "sub sub title h3"
     }
 }
-
-// export const Default = () => {
-//     return <HeadLines />;
-// }
-
-// export const Default = {
-// args: {
-//     login: "Login Page",
-//     register: "Register Page",
-//     toDo: "My Todos",
-//     newTask: "Add New Task",
-//     deleteTask: "Delete Task",
-// }
-// };
