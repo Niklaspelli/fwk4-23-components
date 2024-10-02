@@ -1,8 +1,8 @@
-# FWK4-Components
+# FWK4-23-Components
 
 ## Introduction
 
-`fwk4-components` is a library of small, reusable components that can be used to build flexible and modular applications. The purpose of this repository is to enable fast and efficient development by providing predefined components that can be combined and customized for various projects.
+`fwk4-23-components` is a library of small, reusable components that can be used to build flexible and modular applications. The purpose of this repository is to enable fast and efficient development by providing predefined components that can be combined and customized for various projects.
 
 ## Installation NPM
 
