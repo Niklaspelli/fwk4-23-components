@@ -1,7 +1,4 @@
 import React, { useState } from "react";
-// import Form from "./Form";
-// import Switch from "./Switch";
-// import UniversalButton from "../subComponents/universalButton/UniversalButton";
 import HeadLines from "../subComponents/headlines/HeadLines";
 import UserAtom from "./UserAtom.jsx";
 import PasswordAtom from "./PasswordAtom.jsx";
@@ -39,6 +36,11 @@ const Login = ({ loginFunction, error }) => {
 			<UniversalButton title='Login' type='submit' />
 			<Switch /> */}
         </div>
+        <HeadLines title="Login" />
+        <UserAtom onUserChange={setUser} />
+        <PasswordAtom onPasswordChange={setPassword} />
+        <UniversalButton title="Login" type="button" onClick={handleLoginClick} />
+      </div>
       </div>
     </>
   );
