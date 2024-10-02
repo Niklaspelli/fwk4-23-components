@@ -2,13 +2,6 @@ import React from "react";
 import styles from "./Login.module.css";
 
 const PasswordAtom = ({ onPasswordChange, label = "Password" }) => {
-  // if (!onPasswordChange) {
-  //   return (
-  //     <>
-  //       <b>onChange function required for password!</b> <br />
-  //     </>
-  //   );
-  // }
 
   const handleChange = (e) => {
     onPasswordChange(e.target.value);
@@ -21,7 +14,7 @@ const PasswordAtom = ({ onPasswordChange, label = "Password" }) => {
         <input
           type="password"
           onChange={handleChange}
-          placeholder="Skriv in lösenord"
+          placeholder="Enter password"
           className={styles.passwordInput}
         />
       </label>

@@ -2,14 +2,7 @@ import React from "react";
 import styles from "./Login.module.css";
 
 const UserAtom = ({ onUserChange, label = "Username" }) => {
-  // if (!onUserChange) {
-  //   return (
-  //     <>
-  //       <b>onChange function required for user! </b> <br />
-  //     </>
-  //   );
-  // }
-
+ 
   const handleChange = (e) => {
     onUserChange(e.target.value);
   };
