@@ -14,7 +14,7 @@ const Search = ({ onSearch }) => {
     <div>
       <input className={styles.inputsearch}
         type="text"
-        placeholder="Search..."
+        placeholder="Your search here..."
         value={query}
         onChange={handleInputChange}
       />

@@ -10,7 +10,7 @@ const Profile = () => {
      <div className={styles.container}>
       <HeadLines title="Profile" />
       <div className={styles.profile}>
-      <h3>Hej Malin!</h3> {/* (Bara mmock inför redovisningen) */}
+      <h3>Hello Julia!</h3> {/* (Bara mmock inför redovisningen) */}
       <div>
         <p>Your current email: malin.luron@gmail.com</p> {/* (Bara mmock inför redovisningen) */}
         <input type="text" Placeholder="Change email here"/>
