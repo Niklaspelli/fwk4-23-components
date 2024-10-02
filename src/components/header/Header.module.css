@@ -2,38 +2,39 @@
 
 .header {
   width: 100%; /* Set to full viewport width */
-  height: 15vh; /* Set height relative to the viewport */
-  background-color: #4c4caf; /* Background color */
+  height: 15vh;
+  background-color: #4c4caf; 
   display: flex;
-  justify-content: space-between; /* Distribute space between the logo and search */
+  justify-content: space-between; 
   align-items: center;
   position: relative;
 }
 
 .logoContainer {
   display: flex;
-  align-items: center; /* Center logo and text vertically */
+  align-items: center; 
+  padding-left: 3rem;
 }
 
 .searchContainer {
   display: flex;
   align-items: center;
-  padding-right: 5rem; /* Add some padding to the right to avoid touching the edge */
+  padding-right: 5rem; 
 }
 
-/* Media query for smaller screens */
+
 @media (max-width: 768px) {
   .header {
-    height: 10vh; /* Adjust header height for smaller screens */
+    height: 10vh; 
   }
 
   .logoContainer img {
-    width: 50px; /* Adjust the logo size for smaller screens */
+    width: 50px; 
   }
 }
 
 @media (min-width: 769px) {
   .logoContainer img {
-    width: 100px; /* Adjust the logo size for larger screens */
+    width: 100px; 
   }
 }
