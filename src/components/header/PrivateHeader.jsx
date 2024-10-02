@@ -5,7 +5,6 @@ import styles from "./Header.module.css";
 import logosmall from "../../assets/logosmall.jpg";
 
 const PrivateHeader = () => {
-  // add auto selection of img-size based on screen-size to props value logoSrc
   return (
     <>
       <header className={styles.header}>

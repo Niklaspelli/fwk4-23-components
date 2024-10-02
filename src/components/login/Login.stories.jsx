@@ -13,8 +13,3 @@ export const Default = () => (
   </MockLoginProvider>
 );
 
-// export const WithRealProvider = () => (
-//   <LoginProvider>
-//     <Login />
-//   </LoginProvider>
-// );

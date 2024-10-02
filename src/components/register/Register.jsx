@@ -1,6 +1,5 @@
 import React from "react";
-import Form from "../login/Form";
-import Switch from "../login/Switch";
+import Form from "../subComponents/form/Form";
 import UniversalButton from "../subComponents/universalButton/UniversalButton";
 import HeadLines from "../subComponents/headlines/HeadLines";
 import styles from "./Register.module.css";

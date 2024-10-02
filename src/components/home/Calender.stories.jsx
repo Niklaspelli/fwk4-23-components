@@ -1,7 +1,7 @@
 import Calender from "./Calender";
 
 export default {
-    title: "Components/Calender",
+    title: "FWK/Calender",
     component: Calender,
 };
 

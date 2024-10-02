@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import styles from "./Login.module.css";
+import styles from "../../login/Login.module.css";
 
 const Form = ({ fields = [], onSubmit }) => {
   const [formState, setFormState] = useState(
