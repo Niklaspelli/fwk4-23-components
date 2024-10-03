@@ -1,3 +1,4 @@
-import Header from "./Header";
+import PublicHeader from "./PublicHeader";
+import PrivateHeader from "./PrivateHeader"
 
-export { Header };
+export { PublicHeader, PrivateHeader };

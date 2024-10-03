@@ -32,7 +32,7 @@ Install via npm:
 - Profile
 - Register
 - Workspace
-- #### subComponents
+#### subComponents
 - Avatar
 - Form
 - HeadLines
