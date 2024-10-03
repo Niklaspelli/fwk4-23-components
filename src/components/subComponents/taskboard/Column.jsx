@@ -3,23 +3,23 @@ import TaskCard from "./TaskCard";
 import styles from "./TaskBoard.module.css";
 import { UniversalButton } from "../universalButton";
 
-const Column = ({ title }) => {
-  const [tasks, setTasks] = useState([]);
+const Column = ({ title, tasks, onAddTask, onTaskDragStart, onTaskDrop, onTaskRemove }) => {
   const [newTask, setNewTask] = useState("");
 
   const handleAddTask = () => {
     if (newTask.trim()) {
-      setTasks([...tasks, newTask]);
+      onAddTask(newTask);
       setNewTask("");
     }
   };
 
-  const handleRemoveTask = (taskToRemove) => {
-    setTasks(tasks.filter((task) => task !== taskToRemove));
-  };
 
   return (
-    <div className={styles.column}>
+    <div
+      className={styles.column}
+      onDragOver={(event) => event.preventDefault()}
+      onDrop={() => onTaskDrop()}
+    >
       <h4>{title}</h4>
       <div className={styles.newTaskContainer}>
         <input
@@ -31,13 +31,13 @@ const Column = ({ title }) => {
         />
         <UniversalButton title="Add" type="button" onClick={handleAddTask} />
       </div>
-
-      {tasks.map((task, index) => (
+      {tasks.map((task) => (
         <TaskCard
-          key={index}
-          description={task}
-          onRemove={() => handleRemoveTask(task)}
-        />
+         key={task.id}
+         task={task} 
+         onDragStart={() => onTaskDragStart(task)}
+         onRemove={() => onTaskRemove(task)}
+         />
       ))}
     </div>
   );

@@ -13,6 +13,7 @@ import { HeadLines } from "./components/subComponents/headlines";
 import Avatar from "./components/subComponents/avatar/Avatar";
 import Column from "./components/subComponents/taskboard/Column";
 import TaskBoard from "./components/subComponents/taskboard/TaskBoard";
+import DeleteButton from "./components/subComponents/taskboard/DeleteButton";
 
 
 export {
@@ -29,5 +30,6 @@ export {
   HeadLines,
   Avatar,
   Column,
-  TaskBoard
+  TaskBoard,
+  DeleteButton
 };

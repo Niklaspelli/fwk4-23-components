@@ -5,7 +5,13 @@ export default {
     component: Column,
 }
 
-export const Default = () =>
-    <Column title="Backlog"/>
+export const Default = () => (
+    <Column
+     title="Backlog"
+     tasks ={[
+        {id: 1, content: "Backlog task"}
+     ]}
+     />
+)
 
 

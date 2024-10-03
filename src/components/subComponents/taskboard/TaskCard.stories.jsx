@@ -6,6 +6,8 @@ export default {
     component: TaskCard,
 }
 
-export const Default = () =>
-    <TaskCard />
-;
+export const Default = () => (
+    <TaskCard 
+      task={{ id: 1, content: "This is a task card" }}  
+    />
+  );
