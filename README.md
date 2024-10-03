@@ -1,12 +1,15 @@
-# FWK4-Components
+# FWK4-23-Components
 
 ## Introduction
 
-`fwk4-components` is a library of small, reusable components that can be used to build flexible and modular applications. The purpose of this repository is to enable fast and efficient development by providing predefined components that can be combined and customized for various projects.
+`fwk4-23-components` is a library of small, reusable components that can be used to build flexible and modular applications. The purpose of this repository is to enable fast and efficient development by providing predefined components that can be combined and customized for various projects.
 
-## Installation
+## Installation NPM
 
-To install and use `FWK4-components` in your project, follow the steps below:
+Install via npm:
+   ```bash
+   npm i @niklaspelli/fwk4-23-components
+   ```
 
 ## NPM LINK
 
@@ -20,25 +23,31 @@ To install and use `FWK4-components` in your project, follow the steps below:
 8. import the component you want in app.jsx from the library.
    Notice if you want to uppdate your library you need to do step 3 and step 7 to update.
 
-### NPM
-
-1. Install via npm:
-   ```bash
-   npm i @niklaspelli/fwk4-23-components
-   ```
-
 ### Components in the library:
 
-- universalButton: A simple button component (universal).
-- Login: Login component
-- Register: Register component
-- Search: Search component (universal)
-- Headlines:
-- Logo:
-- Label:
-- InfoUser:
-- InputField: A text field component with validation.
-- Cards: A card component for displaying content.
+- PrivateHeader
+- PublicHeader
+- Home
+- Login - props to use logic ({loginFunction})
+- Profile
+- Register
+- Workspace
+- #### subComponents
+- Avatar
+- Form
+- HeadLines
+- Logo
+- Search
+- TaskBoard
+- Column
+- UniversalButton
+
+
+### Link to github frontend.
+Here you can se an example of how the components are used. 
+https://github.com/Monchekin/fwk4-23-frontend
+
+
 
 ### Storybook
 
