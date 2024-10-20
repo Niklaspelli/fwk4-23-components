@@ -1,0 +1,64 @@
+.cookieBanner {
+  width: 100%;
+  z-index: 50;
+  display: flex;
+  align-items: baseline;
+  justify-content: center;
+  flex-wrap: wrap;
+  background-color: white;
+  color: black;
+  border: 1px solid;
+  border-radius: 0.5rem;
+  font-size: 0.875rem;
+  padding: 0.5rem;
+}
+
+.cookieBannerTextWrapper {
+  flex: 1;
+  flex-shrink: 0;
+  width: 100%;
+  margin: 0.75rem 1.25rem;
+}
+
+@media (min-width: 768px) {
+  .cookieBannerTextWrapper {
+    width: auto;
+    margin: 0.75rem 1.25rem;
+  }
+
+  .cookieBannerText {
+    font-size: 0.75rem;
+  }
+}
+
+.cookieBannerText {
+  font-size: 1rem;
+  color: #000000;
+}
+
+.cookieBannerTextParagraph {
+  font-size: 0.7rem;
+  color: #000000;
+}
+
+.readMoreButton {
+  font-size: 0.7rem;
+  border: 0;
+  background-color: #ffffff;
+}
+
+.spanContainer {
+  display: flex;
+}
+
+.buttonGroup {
+  padding: 0.5rem;
+}
+
+.button {
+  margin-right: 0.5rem;
+  padding: 0.5rem 0.5rem;
+  font-size: 0.8rem;
+  color: #000000;
+  border-radius: 0.25rem;
+}
